@@ -1,7 +1,7 @@
 <div class="rounded-lg border-solid border-2 border-gray-200 p-5">
 
 <p class="text-xl mb-1">{{ plugin.name }}</p>
-<p>GitHub: <a href="{{ plugin.ghLink }}">{{ plugin.gh }}</a> <span class="px-2 py-px bg-teal-300 rounded-full select-none">{{ plugin.ghStars }} stars</span></p>
+{% if plugin.gh %}<p>GitHub: <a href="{{ plugin.ghLink }}">{{ plugin.gh }}</a> <span class="px-2 py-px bg-teal-300 rounded-full select-none">{{ plugin.ghStars }} stars</span></p>{% endif %}
 <p>NPM: <a href="{{ plugin.npmLink }}">{{ plugin.npm }}</a> <span class="px-2 py-px bg-orange-300 rounded-full select-none">{{ plugin.npmDownloads }} downloads</span></p>
 
 </div>
