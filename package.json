@@ -1,0 +1,27 @@
+{
+  "name": "11ty-universe",
+  "version": "0.0.1",
+  "description": "The unofficial Eleventy Universe website, made with Eleventy (of course)",
+  "repository": "https://github.com/ryanccn/11ty-universe.git",
+  "author": "Ryan Cao <70191398+ryanccn@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-cache-assets": "^2.0.3",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.20.0",
+    "cssnano": "^4.1.10",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.8.8"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  },
+  "scripts": {
+    "dev": "postcss src/_includes/css/tailwind.css > src/_includes/css/styles.css && eleventy --serve",
+    "build": "NODE_ENV=production postcss src/_includes/css/tailwind.css > src/_includes/css/styles.css && eleventy",
+    "clean": "rm -rf _site"
+  }
+}

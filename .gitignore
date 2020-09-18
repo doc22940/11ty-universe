@@ -1,0 +1,22 @@
+
+# Node stuff
+
+node_modules/
+
+# Eleventy stuff
+
+_site/
+
+.cache/
+
+src/_includes/css/styles.css
+
+# Mac stuff
+
+**/.DS_Store
+
+.DS_Store
+
+**/.localized
+
+.localized

@@ -1,0 +1,7 @@
+<div class="rounded-lg border-solid border-2 border-gray-200 p-5">
+
+<p class="text-xl mb-1">{{ website.name }}</p>
+{% if website.url %}<p>URL: <a href="{{ website.url }}">{{ website.url }}</a></p>{% endif %}
+<p>GitHub: <a href="{{ website.ghLink }}">{{ website.gh }}</a> <span class="px-2 py-px bg-teal-300 rounded-full select-none">{{ website.ghStars }} stars</span></p>
+
+</div>

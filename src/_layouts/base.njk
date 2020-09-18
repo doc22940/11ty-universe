@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% set title = title or 'Eleventy Universe' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% set css %}{% include 'css/styles.css' %}{% endset %}
+    <style>{{ css | safe }}</style>
+  </head>
+  <body>
+    {% include 'header.njk' %}
+    <main class="my-10 mx-6 md:mx-8 lg:mx-20 xl:mx-64">
+    {{ content | safe }}
+    </main>
+    {% include 'footer.njk' %}
+  </body>
+</html>
