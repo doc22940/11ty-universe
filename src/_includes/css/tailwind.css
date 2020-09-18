@@ -3,7 +3,7 @@
 @tailwind components;
 
 .cta-link {
-  @apply text-5xl p-10 border-teal-300 border-2 rounded-lg text-center transition-colors duration-100 ease-linear hover:bg-teal-600 hover:text-white;
+  @apply text-5xl p-10 border-teal-300 border-2 rounded-lg text-center transition-colors duration-100 ease-linear hover:bg-teal-300 hover:text-white;
 }
 
 @tailwind utilities;
