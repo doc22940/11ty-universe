@@ -17,10 +17,12 @@ module.exports = async () => {
         ghLink: package.links.repository,
         ghStars: 10000,
       };
+    } else {
+      var githubInfo = null;
     }
     returnedContent.push({
       name: package.name,
-      (package.links.repository) && ...githubInfo,
+      ...githubInfo,
       npm: package.name,
       npmLink: package.links.npm,
       npmDownloads: 10000,
