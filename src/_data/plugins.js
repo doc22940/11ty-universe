@@ -20,7 +20,7 @@ module.exports = async () => {
     }
     returnedContent.push({
       name: package.name,
-      ...githubInfo,
+      package.links.repository && ...githubInfo,
       npm: package.name,
       npmLink: package.links.npm,
       npmDownloads: 10000,
