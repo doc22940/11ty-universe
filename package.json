@@ -10,7 +10,6 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-cache-assets": "^2.0.3",
     "autoprefixer": "^9.8.6",
-    "axios": "^0.20.0",
     "cssnano": "^4.1.10",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^7.1.2",
