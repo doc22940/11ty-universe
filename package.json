@@ -16,7 +16,7 @@
     "tailwindcss": "^1.9.5"
   },
   "devDependencies": {
-    "prettier": "^2.1.2"
+    "prettier": "^2.2.0"
   },
   "scripts": {
     "dev": "postcss src/_includes/css/tailwind.css > src/_includes/css/styles.css && eleventy --serve",
